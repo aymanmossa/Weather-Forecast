@@ -1,0 +1,10 @@
+- [x] Create README.md file for the project.
+- [x] Check if Git is initialized in the project directory.
+- [x] If not initialized, run git init.
+- [ ] Add all project files to Git staging area.
+- [ ] Commit the changes with an initial commit message.
+- [ ] Check if GitHub CLI (gh) is installed.
+- [ ] If not installed, guide the user to install GitHub CLI.
+- [ ] Create a new GitHub repository named 'weather-forecast' (assuming public visibility).
+- [ ] Add the GitHub repository as a remote origin.
+- [ ] Push the committed changes to the GitHub repository.

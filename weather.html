@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/weather.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="mobile-menu">
+                <h1 class="app-title">Weather</h1>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <h1 class="app-title desktop-title">Weather Forecast</h1>
+            <button class="theme-toggle desktop-theme" id="themeToggleDesktop">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Enter city name..." id="searchInput">
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i> <span class="search-text">Search</span>
+            </button>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            City not found. Please try again.
+        </div>
+
+        <main>
+            <div class="current-weather" id="currentWeather">
+                <div class="loading">
+                    <i class="fas fa-spinner"></i> Loading weather data...
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 20px; color: var(--primary-color);">5-Day Forecast</h2>
+            <div class="forecast" id="forecast">
+                <!-- Forecast will be populated by JavaScript -->
+            </div>
+        </main>
+
+        <footer>
+            <p></p>
+            <div class="api-credit">
+                Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/weather.js"></script>
+</body>
+
+</html>
